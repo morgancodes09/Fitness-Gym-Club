@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - FitPro Gym</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #000;
+            color: #fff;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: gold;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 15px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            background: gold;
+            color: black;
+            border-radius: 5px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://c7.alamy.com/comp/2DBYH22/sport-and-fitness-concept-rows-of-metal-dumbbells-on-rack-in-the-gym-2DBYH22.jpg') center/cover no-repeat;
+            color: gold;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Shop Section */
+        .shop {
+            padding: 50px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            background: linear-gradient(135deg, #111, #222);
+        }
+
+        .product-card {
+            background: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(255, 223, 0, 0.6);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .product-card h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: gold;
+        }
+
+        .product-card p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .product-card .price {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            color: lightgreen;
+        }
+
+        .product-card button {
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            border: none;
+            background: gold;
+            color: black;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 10px rgba(255, 223, 0, 0.6);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">FitPro Gym</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="calorie.html">Calorie Counter</a></li>
+            <li><a href="trainers.html">Our Trainers</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </header>
+
+    <section class="header">
+        <h1>Shop Our Products</h1>
+        <p>Everything you need to support your fitness journey!</p>
+    </section>
+
+    <section class="shop">
+        <!-- Products -->
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/710SxepIfiL._AC_UL320_.jpg" alt="Dumbbells">
+            <h3>Dumbbells</h3>
+            <p>Durable and high-quality dumbbells.</p>
+            <p class="price">$2</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://img2.hkrtcdn.com/28400/prd_2839991-MuscleBlaze-Beginners-Protein-Powder-4.4-lb-Chocolate_o.jpg" alt="Protein Powder">
+            <h3>Protein Powder</h3>
+            <p>Boost your muscle recovery.</p>
+            <p class="price">$40</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Sports/October/BAU/2.jpg" alt="Yoga Mat">
+            <h3>Yoga Mat</h3>
+            <p>Comfortable and non-slip yoga mat.</p>
+            <p class="price">$20</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/ef625ae2-752a-4fae-98b4-104883265073._CR0,0,1200,628_SX430_QL70_.png" alt="Water Bottle">
+            <h3>Water Bottle</h3>
+            <p>Stay hydrated with our premium bottle.</p>
+            <p class="price">$10</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71l2-gWOnpL._AC_UL320_.jpg" alt="Water Bottle">
+            <h3>Skipping Rope</h3>
+            <p>Skip without skip.</p>
+            <p class="price">$10</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/61qUjH-6Q2L._AC_UF480,600_SR480,600_.jpg" alt="Water Bottle">
+            <h3>Thermal Underwear Tops</h3>
+            <p>Sweat and burn calories.</p>
+            <p class="price">$10</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71ljhuGlVnL._AC_UL320_.jpg" alt="Water Bottle">
+            <h3>Fitness Cycle</h3>
+            <p>Bring your leg day to home.</p>
+            <p class="price">$10</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Sports/EnFRevmap/Exploreproduct/PC/new/Explore-products-basis-your-end-PC_01.jpg" alt="Water Bottle">
+            <h3>Treadmill</h3>
+            <p>Never stop your legs.</p>
+            <p class="price">$10</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/61y4Z1cycoL._SX679_.jpg" alt="Water Bottle">
+            <h3>Bench Combo</h3>
+            <p>A complete set for home training.</p>
+            <p class="price">$10</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/81SEVBzTWhL._AC_UL320_.jpg" alt="Water Bottle">
+            <h3>Ankle Cotton Socks</h3>
+            <p>Very strong and comfortable.</p>
+            <p class="price">$10</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images-eu.ssl-images-amazon.com/images/I/61BvW1b3dtL._AC_UL232_SR232,232_.jpg" alt="Water Bottle">
+            <h3>Hand Grip</h3>
+            <p>Have a strong grip.</p>
+            <p class="price">$10</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71Vt2Pgy4hL._AC_UL320_.jpg" alt="Water Bottle">
+            <h3>Roller For Men</h3>
+            <p>For strong back and stability.</p>
+            <p class="price">$10</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71W80G89rwL._AC_UL320_.jpg" alt="Water Bottle">
+            <h3>Gym Bags</h3>
+            <p>Because we care your things.</p>
+            <p class="price">$10</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71i5+KMmtXL._AC_UL320_.jpg" alt="Water Bottle">
+            <h3>Lifting Wist Supports</h3>
+            <p>We will not let it slip.</p>
+            <p class="price">$10</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71GCO-7mEXL._AC_UL320_.jpg" alt="Water Bottle">
+            <h3>Pull-UP Bars</h3>
+            <p>Train your hands and wrists.</p>
+            <p class="price">$10</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/51x-boh8rfL._AC_UL320_.jpg" alt="Water Bottle">
+            <h3>Gel Excercise Ball</h3>
+            <p>Stress relief is important.</p>
+            <p class="price">$10</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71xlgCcB4ML._AC_UL320_.jpg" alt="Water Bottle">
+            <h3>Latex Loop Bands</h3>
+            <p>Strech without any worry.</p>
+            <p class="price">$10</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/61F9doe2lyL._AC_UL320_.jpg" alt="Water Bottle">
+            <h3>Men's Joggers</h3>
+            <p>Stay relaxed and comfortable.</p>
+            <p class="price">$10</p>
+            <button>Buy Now</button>
+        </div>
+        
+        <!-- Add More Products -->
+        <!-- Add up to 25 products here -->
+    </section>
+
+    <footer>
+        © 2024 FitPro Gym. All Rights Reserved.
+    </footer>
+</body>
+</html>

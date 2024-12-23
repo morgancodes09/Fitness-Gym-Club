@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Tips - FitPro Gym</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #000, #333);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 10px;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: gold;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 15px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            background: gold;
+            color: black;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.pinimg.com/originals/73/e5/3b/73e53b90582234841d8d04d93faaa122.jpg') center/cover no-repeat;
+            color: gold;
+            animation: fadeIn 2s ease;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Tips Section */
+        .tips-container {
+            padding: 50px 20px;
+            background: #222;
+            text-align: center;
+            animation: slideUp 1.5s ease;
+        }
+
+        .tips-container h2 {
+            color: gold;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .tips-container .tip-card {
+            background: #333;
+            margin: 20px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .tips-container .tip-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 223, 0, 0.6);
+        }
+
+        .tips-container .tip-card h3 {
+            color: gold;
+            font-size: 1.5rem;
+        }
+
+        .tips-container .tip-card p {
+            color: #fff;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .tips-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Additional Section */
+        .additional-info {
+            padding: 50px 20px;
+            background: linear-gradient(to bottom, #333, #111);
+            text-align: center;
+        }
+
+        .additional-info h2 {
+            color: gold;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .additional-info p {
+            font-size: 1.2rem;
+            color: #aaa;
+            line-height: 1.5;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            color: #888;
+        }
+
+        /* Animations */
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(100px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .tips-container .tip-card {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">FitPro Gym</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="trainers.html">Our Trainers</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+        </ul>
+    </header>
+
+    <section class="hero">
+        <h1>Nutrition for Your Fitness Goals</h1>
+        <p>Discover the secrets to a healthier, fitter you with our expert nutrition tips.</p>
+    </section>
+
+    <section class="tips-container">
+        <h2>Top Nutrition Tips</h2>
+        <div class="tips-list">
+            <div class="tip-card">
+                <h3>Stay Hydrated</h3>
+                <p>Drink plenty of water throughout the day to keep your body energized and your metabolism high.</p>
+            </div>
+            <div class="tip-card">
+                <h3>Balanced Meals</h3>
+                <p>Ensure each meal contains a healthy mix of proteins, carbs, and fats to fuel your workouts.</p>
+            </div>
+            <div class="tip-card">
+                <h3>Plan Your Meals</h3>
+                <p>Meal prepping helps you avoid unhealthy choices and stick to your fitness goals.</p>
+            </div>
+            <div class="tip-card">
+                <h3>Avoid Processed Foods</h3>
+                <p>Focus on whole, unprocessed foods to provide your body with essential nutrients.</p>
+            </div>
+            <div class="tip-card">
+                <h3>Post-Workout Nutrition</h3>
+                <p>Replenish your energy with a combination of protein and carbs after your workout.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="additional-info">
+        <h2>Additional Resources</h2>
+        <p>
+            Explore our personalized nutrition plans to match your fitness goals. Whether you're looking to build muscle,
+            lose weight, or maintain a healthy lifestyle, we have the right plan for you.
+        </p>
+    </section>
+
+    <footer>
+        © 2024 FitPro Gym. All Rights Reserved.
+    </footer>
+</body>
+</html>

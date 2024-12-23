@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Trainers - FitPro Gym</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background: #000;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: gold;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 15px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            background: gold;
+            color: black;
+            border-radius: 5px;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+            animation: zoomIn 2s ease forwards;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: gold;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(1.2);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Trainers Section */
+        .trainers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #111, #222);
+        }
+
+        .trainer-card {
+            background: linear-gradient(135deg, #333, #444);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 100%;
+            max-width: 300px;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .trainer-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(255, 223, 0, 0.6);
+        }
+
+        .trainer-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .trainer-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .trainer-card h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: gold;
+        }
+
+        .trainer-card p {
+            font-size: 1rem;
+            padding: 0 15px;
+            margin-bottom: 15px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">FitPro Gym</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="trainers.html">Our Trainers</a></li>
+            <li><a href="calorie.html">Calorie Counter</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </header>
+
+    <section class="header">
+        <h1>Meet Our Trainers</h1>
+        <p>Learn from the best in the industry and achieve your fitness goals!</p>
+    </section>
+
+    <section class="trainers">
+        <div class="trainer-card">
+            <img src="https://i.pinimg.com/474x/3a/ee/33/3aee33816e40ad0ddac928d00160c04f.jpg" alt="Trainer 1">
+            <h3>Sylvester Stallone</h3>
+            <p>Specialty: Strength Training & Muscle Building</p>
+        </div>
+        <div class="trainer-card">
+            <img src="https://i.pinimg.com/736x/e4/d4/7d/e4d47d3d3baa5c6e3fb7f1b5d1f97bf9.jpg" alt="Trainer 2">
+            <h3>Sreeleela</h3>
+            <p>Specialty: Yoga & Flexibility</p>
+        </div>
+        <div class="trainer-card">
+            <img src="https://reemusboxing.com/wp-content/uploads/2016/06/tyson-in-training-300x209.jpg" alt="Trainer 3">
+            <h3>Mike Tyson</h3>
+            <p>Specialty: High-Intensity Interval Training (HIIT)</p>
+        </div>
+        <div class="trainer-card">
+            <img src="https://miro.medium.com/v2/resize:fit:1071/1*WNr4o3XKVcb556Al3beWAQ.jpeg" alt="Trainer 4">
+            <h3>Arnold Schwarzenegger</h3>
+            <p>Specialty: Cardio & Endurance</p>
+        </div>
+        <div class="trainer-card">
+            <img src="https://media.assettype.com/indulgexpress%2Fimport%2F2022%2F1%2F11%2Foriginal%2FSamanthaRuthPrabhuacingherworkout.jpg?w=1024&auto=format%2Ccompress&fit=max" alt="Trainer 5">
+            <h3>Samantha Prabhu</h3>
+            <p>Specialty: Nutrition & Personal Training</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2024 FitPro Gym. All Rights Reserved.
+    </footer>
+</body>
+</html>
